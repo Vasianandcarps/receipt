@@ -1,15 +1,24 @@
-let Latte = 26,
-  nl = "Latte";
-let Americano = 20,
-  na = "Americano";
-let Capuchino = 23,
-  nc = "Capuchinoe";
-let Chocolate = 27,
-  nch = "Latte";
-
-function drink(name) {
-  document.write(name + "<br>");
+function order() {
+  let order = prompt("Input your order");
+  switch (order) {
+    case "Latte":
+      nl = "Latte";
+      document.write(nl + "<br>" + 26 + "grn");
+      break;
+    case "Americano":
+      na = "Americano";
+      document.write(na + "<br>" + 20 + "grn");
+      break;
+    case "Capuchinoe":
+      nc = "Capuchinoe";
+      document.write(nc + "<br>" + 23 + "grn");
+      break;
+    case "Chocolate":
+      nch = "Chocolate";
+      document.write(nch + "<br>" + 27 + "grn");
+      break;
+    default:
+      alert("Try again");
+  }
 }
-function receip(coffee) {
-  document.write("Sum:" + coffee + "grn");
 }
